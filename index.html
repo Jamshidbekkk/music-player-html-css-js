@@ -27,7 +27,7 @@
             <h1>Despacito</h1>
             <p>Luis Fonsi Ft. Puerto Rican</p>
 
-            <audio controls>
+            <audio id="song">
                 <source src="/img/Go! - NEFFEX.mp3" type="audio/mpeg">
             </audio>
 
@@ -35,13 +35,17 @@
 
             <div class="controls">
                 <div><i class="bi bi-skip-backward-fill"></i></div>
-                <div><i class="bi bi-play-fill"></i></div>
+                <div onclick="playPause()"><i class="bi bi-play-fill" id="ctrl-icon"></i></div>
                 <div><i class="bi bi-skip-forward-fill"></i></div>
             </div>
 
+            <!-- <i class="bi bi-pause-fill"></i> -->
         </div>
     </div>
 
-    
+
+
+
+    <script src="main.js"></script>
 </body>
 </html>
